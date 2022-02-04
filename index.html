@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,25 +14,34 @@
   </style>
 </head>
 <body>
+  <main>
+    <img class="logo" src="./images/logo.svg" alt="logo">
 
-  <h1>We're <span>coming soon</span></h1>
+    <img class="img-mobile" src="./images/hero-mobile.jpg" alt="woman">
 
-  <p>
-    Hello fellow shoppers! We're currently building our new fashion store. 
-    Add your email below to stay up-to-date with announcements and our launch deals.
-  </p>
+    <img class="img-desktop" src="./images/hero-mobile.jpg" alt="woman">
+
+    <div class="content">
+      <h1>We're <span>coming soon</span></h1>
+
+      <p class="description">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      
+      <form action="">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <input type="submit" value=">">
+      </form>
+    </div>
+   
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Herson Meireles</a>.
+      </p>
+    </footer>
+  </main>
   
-  <form action="">
-    <input type="email" name="email" id="email" placeholder="Email Address">
-    <input type="submit" value=">">
-  </form>
-  
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Herson Meireles</a>.
-    </p>
-  </footer>
 </body>
 </html>
