@@ -65,7 +65,7 @@ form{
 
 input[type=email] {
     width: 100%;
-    padding: 1rem ;
+    padding: 1rem;
     border-radius: 40px;
     border: 1px solid hsl(0, 28%, 79%);
     background-color: #faf2f2;
@@ -79,7 +79,10 @@ input::placeholder {
 }
 
 input[type=submit] {
-    border: 1px solid hsl(0, 28%, 79%);
+    border: none;
     background:  linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    
+    position: absolute;
+    padding: 1.03rem 1.8rem;
+    right: 1.9rem;
+    border-radius: 40px;
 }
