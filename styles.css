@@ -136,10 +136,19 @@ input::placeholder {
     
   }
 
+  input[type="email"]:invalid{
+    border: 1.125px red solid;
+    
+  }
+
   .btn {
     padding: 1.1rem 2.7rem;
     top: 0;
     right: -5px;
+  }
+
+  .btn:active{
+    background: hsl(0, 80%, 86%);
   }
 
   footer{
