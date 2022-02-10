@@ -89,17 +89,18 @@ input::placeholder {
 }
 
 @media (min-width: 700px) {
-  body{
+  body {
     display: grid;
     grid-template-columns: 1fr auto;
   }
-  
+
   main {
     display: flex;
     flex-direction: column;
     padding: 4rem 14rem 4rem 10rem;
     gap: 6rem;
-    background-image: url(./images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-image: url(./images/bg-pattern-desktop.svg),
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   }
 
   .img-mobile {
@@ -118,7 +119,7 @@ input::placeholder {
     letter-spacing: 17px;
   }
 
-  .description{
+  .description {
     margin-top: 20px;
     font-size: 1rem;
     text-align: left;
@@ -126,32 +127,40 @@ input::placeholder {
     line-height: 1.7;
   }
 
-  form{
+  form {
     margin-top: 40px;
   }
-  
-  input[type="email"]{
+
+  #email {
     width: 100%;
     padding: 1.3rem 2rem;
-    
   }
 
-  input[type="email"]:invalid{
+  #email:invalid {
     border: 1.125px red solid;
-    
+    background-image: url(./images/icon-error.svg);
+    background-position: 75% center;
+    background-repeat: no-repeat;
   }
 
   .btn {
     padding: 1.1rem 2.7rem;
     top: 0;
     right: -5px;
+    cursor: pointer;
   }
 
-  .btn:active{
+  .btn:active {
     background: hsl(0, 80%, 86%);
   }
 
-  footer{
+  .alert {
+    font-size: 0.8rem;
+    color: red;
+    margin: 0.5rem 2rem;
+  }
+
+  footer {
     position: absolute;
     bottom: 10px;
     left: 240px;
