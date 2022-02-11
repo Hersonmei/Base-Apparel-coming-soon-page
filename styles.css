@@ -63,7 +63,7 @@ form {
   margin-top: 30px;
 }
 
-input[type="email"] {
+input[type="text"] {
   width: 100%;
   padding: 1rem;
   border-radius: 40px;
@@ -136,7 +136,7 @@ input::placeholder {
     padding: 1.3rem 2rem;
   }
 
-  #email:invalid {
+  .invalid {
     border: 1.125px red solid;
     background-image: url(./images/icon-error.svg);
     background-position: 75% center;

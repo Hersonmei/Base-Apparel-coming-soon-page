@@ -1,16 +1,27 @@
 const btn = document.querySelector('.btn')
 const alert = document.querySelector('.alert')
-let email = document.getElementById("email").value;
+const email = document.querySelector("#email")
 
-console.log(email)
-btn.addEventListener("click", () => {
+
+
+btn.addEventListener('click', () => {
     event.preventDefault();
+    
+    const emailValue = email.value;
+   
 
-    console.log(email);
-    // if(){
+    function isValid (emailTest) {
+        const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regexEmail.test(emailTest);
+    };
 
-    // }
 
-    alert.innerHTML = email;
+    if(isValid(emailValue)){
+        alert.innerText ='';
+    } else{
+        alert.innerText = 'Please provide a valid email';
+        email.classList.add('invalid')
+    }
+
+    
 })
-
