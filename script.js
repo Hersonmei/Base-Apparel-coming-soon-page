@@ -1,6 +1,6 @@
 const btn = document.querySelector('.btn')
 const alert = document.querySelector('.alert')
-const email = document.querySelector("#email")
+const email = document.querySelector(".email")
 
 
 
@@ -18,6 +18,7 @@ btn.addEventListener('click', () => {
 
     if(isValid(emailValue)){
         alert.innerText ='';
+        email.classList.remove('invalid')
     } else{
         alert.innerText = 'Please provide a valid email';
         email.classList.add('invalid')
