@@ -4,7 +4,7 @@ const email = document.querySelector(".email")
 
 
 
-btn.addEventListener('click', () => {
+btn.addEventListener('submit', () => {
     event.preventDefault();
     
     const emailValue = email.value;
