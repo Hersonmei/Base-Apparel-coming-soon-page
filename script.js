@@ -1,10 +1,10 @@
-const btn = document.querySelector('.btn')
+const form = document.querySelector('#form')
 const alert = document.querySelector('.alert')
 const email = document.querySelector(".email")
 
 
 
-btn.addEventListener('submit', () => {
+form.addEventListener('submit', () => {
     event.preventDefault();
     
     const emailValue = email.value;

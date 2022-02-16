@@ -104,8 +104,6 @@ input::placeholder {
   box-shadow: 1px 10px 30px hsl(0, 28%, 79%);
 }
 
-
-
 .alert {
   font-size: 0.8rem;
   color: red;
