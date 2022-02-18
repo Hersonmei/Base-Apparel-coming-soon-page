@@ -3,18 +3,15 @@ const alert = document.querySelector('.alert')
 const email = document.querySelector(".email")
 
 
+function isValid (emailTest) {
+    const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regexEmail.test(emailTest);
+};
 
-form.addEventListener('submit', () => {
-    event.preventDefault();
+
+function checkFieldValidity (){
     
     const emailValue = email.value;
-   
-
-    function isValid (emailTest) {
-        const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regexEmail.test(emailTest);
-    };
-
 
     if(isValid(emailValue)){
         alert.innerText ='';
@@ -23,6 +20,12 @@ form.addEventListener('submit', () => {
         alert.innerText = 'Please provide a valid email';
         email.classList.add('invalid')
     }
-
     
+}
+
+
+form.addEventListener('submit', () => {
+    event.preventDefault();
+    
+    checkFieldValidity ();
 })
