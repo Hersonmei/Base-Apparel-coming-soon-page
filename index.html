@@ -47,14 +47,15 @@
             name="email"
             class="email"
             placeholder="Email Address"
+            aria-describedby="message-alert"
           />
 
           <label for="btn"></label>
           <button class="btn" type="submit" id="btn">
-            <img class="arrow" src="./images/icon-arrow.svg"/>
+            <img class="arrow" src="./images/icon-arrow.svg" alt="button, image, submit"/>
           </button>
 
-          <p class="alert"></p>
+          <p class="alert" id="message-alert" aria-live="polite"></p>
         </form>
       </div>
     </main>
